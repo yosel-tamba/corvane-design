@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === Bootstrap-like responsive container utilities ===
+   Breakpoints (matches Bootstrap 5):
+   - sm: 576px
+   - md: 768px
+   - lg: 992px
+   - xl: 1200px
+   - xxl: 1400px
+*/
+
+/* base container padding/gutters */
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl,
+.container-fluid {
+  width: 100%;
+  padding-left: 1rem;  /* ~16px */
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* .container: responsive (changes max-width by breakpoint) */
+.container {
+  max-width: 100%;
+}
+
+/* Small (≥576px) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+/* Medium (≥768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .container-md {
+    max-width: 720px;
+  }
+}
+
+/* Large (≥992px) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .container-lg {
+    max-width: 960px;
+  }
+}
+
+/* X-Large (≥1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+
+/* XX-Large (≥1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .container-xxl {
+    max-width: 1320px;
+  }
+}
+
+/* container-sm/container-md/container-lg etc:
+   below their breakpoint they remain 100% (handled by the defaults above).
+   At and above their breakpoint they get fixed max-width as set.
+*/
+
+/* container-fluid stays full width */
+.container-fluid {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* optional utility to remove horizontal padding like Bootstrap's container-fluid when needed */
+.container-no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
