@@ -268,7 +268,7 @@ export default function Home() {
               </h2>
               <p className="text-slate-600 mb-4">
                 Corvane Design hadir untuk membantu individu maupun bisnis
-                tampil lebih profesional dan standout ✨. Kami menyediakan
+                tampil lebih profesional dan standout. Kami menyediakan
                 berbagai layanan desain kreatif yang disesuaikan dengan
                 kebutuhanmu.
               </p>
