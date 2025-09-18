@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Corvane Design — CV, Apparel, UI/UX",
+  title: "Corvane Design — CV, Apparel, UI/UX, Flyer",
   description:
     "Corvane Design menyediakan jasa desain CV khusus developer, apparel custom, dan UI/UX modern untuk website maupun aplikasi.",
 };
