@@ -143,7 +143,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold">Layanan Kami</h2>
               <p className="text-slate-500 mt-2">
                 Dari CV, apparel, hingga UI/UX — semua desain biar kamu tampil
-                beda ✨
+                beda
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
