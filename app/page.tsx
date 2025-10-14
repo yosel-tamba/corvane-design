@@ -49,7 +49,7 @@ export default function Home() {
       >
         <div className="container container-sm container-sm container-lg mx-auto px-6 py-4 flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold">
-            <span className="text-blue-500">Corvane</span>
+            <span className="text-blue-500">Corvaneeeeeeee</span>
             <span className="text-amber-500">Design</span>
           </a>
           <nav className="hidden md:flex space-x-8">
